@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Connect Four</title>
+    <meta name="author" content="Sanjay Tourani />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="description" content="Connect Four game" />
+    <meta name="keywords" content="Connect Four game" />
+    
+    <link rel="stylesheet" href="css/connect4.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" media="all" />
+    
+    <link rel="Shortcut icon" href="img/favicon.ico" />
+    <link href='http://fonts.googleapis.com/css?family=Righteous' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <div class="container">
+        
+        <h1 class="title">Connect Four</h1>
+        
+        <h2 class="winner">&nbsp;</h2>
+        
+        <div id="board_cont"></div>
+        
+        <div class="menu" style="text-align: center;">
+            <button id="restart" class="btn"><i class="icon-refresh"></i> Restart game</button>
+        </div>
+        
+    </div>
+    
+    <div id="modal-win" class="modal hide fade">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                &times;
+            </button>
+            <h3><i class="icon-trophy"></i> ¡Game ended!</h3>
+        </div>
+        <div class="modal-body">
+            <p>
+                Winner is!!
+            </p>
+        </div>
+        <div class="modal-footer">
+            <a href="#" class="btn btn-primary"><i class="icon-plus icon-white"></i> Start new game</a>
+        </div>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script src="js/connect4.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    
+    <script>
+        $(function() {
+            game.init( $("#board_cont") );
+        });
+    </script>
+</body>
+</html>
