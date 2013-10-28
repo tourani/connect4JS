@@ -12,5 +12,6 @@ Features
 
 
 
-#License
+License
+-------------------------
 (Mit License)
