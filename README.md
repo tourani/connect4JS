@@ -11,7 +11,6 @@ Features
 * Includes unit tests using QUnit
 
 
-****
 
 #License
 (Mit License)
